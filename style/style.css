@@ -15,7 +15,7 @@ body {
 article {
   position: relative;
   width: 85%;
-  height: 90vh;
+  height: 95vh;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.2);
