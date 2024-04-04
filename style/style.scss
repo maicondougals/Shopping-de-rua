@@ -3,7 +3,7 @@ body{
     min-height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     background-image: url('https://imgmd.net/images/v1/guia/1560303/ponte-jk.jpg');
     background-size: cover;
@@ -16,7 +16,7 @@ body{
 article{
     position: relative;
     width: 85%;
-    height: 600px;
+    height: 90vh;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.2);
