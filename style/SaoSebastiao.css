@@ -4,41 +4,74 @@ body {
   height: 5000px;
 }
 
-header {
+.nav-container {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  margin-left: -350px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(128, 128, 128, 0.5);
+  transition: all 0.4s ease-out;
+  z-index: 1;
+}
+.nav-container .nav-itens {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  width: 100%;
-  height: 700px;
-  color: white;
-  background-image: url(/images/background-saosebastiao.png);
-  background-position: 0 center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin: 50% 0;
+  height: 80%;
 }
-header nav {
-  width: 100%;
-  height: 100px;
+.nav-container .ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-around;
 }
-header nav .btn-and-name {
-  height: 100px;
+.nav-container .ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.nav-click {
+  margin-left: 0px;
+  transition: all 0.4s ease-out;
+}
+
+body.nav-click {
+  overflow: hidden;
+}
+
+.nav-container button {
+  background-color: transparent;
+  color: white;
+  position: relative;
   width: 200px;
+  height: 50px;
+  border: none;
+  margin-left: 100%;
+}
+
+header {
+  background-image: url(/images/background-saosebastiao.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgba(102, 102, 102, 0.311);
+  justify-content: center;
 }
 header .logo {
-  width: 200px;
-  height: 200px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 24px;
+}
+header .logo img {
+  width: 20vw;
+  height: auto;
 }
 
 /*# sourceMappingURL=SaoSebastiao.css.map */
